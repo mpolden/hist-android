@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mitt navn</string>
+    <string name="first_name">Martin</string>
+    <string name="last_name">Polden</string>
+    <string name="show_first_name">Vis fornavn</string>
+    <string name="show_last_name">Vis etternavn</string>
+    <string name="show_full_name">Vis fullt navn</string>
+</resources>
