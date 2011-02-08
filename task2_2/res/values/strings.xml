@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyActivity</string>
+    <string name="description">Vennligst skriv inn navnet ditt</string>
+    <string name="next">Neste</string>
+    <string name="greeting">Hei<b>%1$s</b>!
+    </string>
+    <string name="back">Gå tilbake</string>
+</resources>
