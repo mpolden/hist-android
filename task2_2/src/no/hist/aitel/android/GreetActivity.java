@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 public class GreetActivity extends Activity {
 
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.setContentView(R.layout.greet);
