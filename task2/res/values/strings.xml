@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MyActivity</string>
+    <string name="app_name">Flagg</string>
+    <string name="change_activity">Bytt aktivitet</string>
+    <string name="id_flaggView">id_flagg</string>
+    <string name="norway">Norge</string>
+    <string name="uk">Storbritannia</string>
+    <string name="italy">Italia</string>
+    <string name="germany">Tyskland</string>
 </resources>
