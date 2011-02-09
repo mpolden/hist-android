@@ -64,7 +64,9 @@ public class ClockActivity extends Activity {
                 finish();
                 return true;
             }
+            default: {
+                return false;
+            }
         }
-        return false;
     }
 }
