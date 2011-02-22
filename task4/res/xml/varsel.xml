@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weatherdata>
+    <location>
+        <name>Trondheim</name>
+        <type>By</type>
+        <country>Norge</country>
+        <timezone id="Europe/Oslo" utcoffsetMinutes="60"/>
+        <location altitude="8" latitude="63.4304873907371"
+                  longitude="10.3950612843065" geobase="ssr"
+                  geobaseid="211102"/>
+    </location>
+    <credit>
+        <!--For å bruke gratis værdata fra yr.no, MÅ du vise følgende tekst godt synlig på nettsiden din. Teksten skal være en lenke til URL-en som er spesifisert.-->
+        <!--Les mer om vilkår for bruk av gratis værdata + retningslinjer på
+       http://www.yr.no/verdata/ -->
+        <link text="Værvarsel fra yr.no, levert av Meteorologisk institutt og NRK"
+              url="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/"/>
+    </credit>
+    <links>
+        <link id="xmlSource"
+              url="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/varsel.xml"/>
+        <link id="overview"
+              url="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/"/>
+        <link id="hourByHour"
+              url="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/time_for_time.html"/>
+        <link id="weekend"
+              url="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/helg.html"/>
+        <link id="longTermForecast"
+              url="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/langtidsvarsel.html"/>
+        <link id="radar"
+              url="http://www.yr.no/sted/Norge/Sør-Trøndelag/Trondheim/Trondheim/radar.html"/>
+    </links>
+    <meta>
+        <lastupdate>2011-02-22T10:18:00</lastupdate>
+        <nextupdate>2011-02-22T17:15:00</nextupdate>
+    </meta>
+    <sun rise="2011-02-22T07:49:06" set="2011-02-22T17:16:01"/>
+    <forecast>
+        <text>
+            <location name="Trondheim">
+                <time from="2011-02-22" to="2011-02-23">
+                    <title>tirsdag og onsdag</title>
+                    <body>&lt;strong&gt;Sør-Trøndelag:&lt;/strong&gt; Søraust
+                        bris, frisk bris 10 m/s utsatte steder, i Ytre Namdalen
+                        liten kuling 12, fra onsdag ettermiddag stiv kuling 15.
+                        Stort sett pent vær. Onsdag kveld tilskyende i
+                        Sør-Trøndelag.
+                    </body>
+                </time>
+                <time from="2011-02-23" to="2011-02-23">
+                    <title>onsdag</title>
+                    <body>&lt;strong&gt;Trøndelag:&lt;/strong&gt; Søraust bris,
+                        liten kuling 12 m/s utsatte steder, onsdag ettermiddag
+                        økende til stiv kuling 15, i Ytre Namdalen sterk kuling
+                        20. Lettskyet, oppholdsvær.
+                    </body>
+                </time>
+                <time from="2011-02-24" to="2011-02-24">
+                    <title>torsdag</title>
+                    <body>&lt;strong&gt;Møre og Romsdal og Trøndelag:&lt;/strong&gt;
+                        Sørøstlig bris, kuling utsatte steder. Litt snø, senere
+                        regn i lavere strøk. Fra om kvelden etter hvert
+                        sørvestlig kuling på kysten. Noen regnbyger, vesentlig i
+                        ytre strøk. Mildere.
+                    </body>
+                </time>
+                <time from="2011-02-25" to="2011-02-26">
+                    <title>fredag og lørdag</title>
+                    <body>&lt;strong&gt;Sør-Norge:&lt;/strong&gt; Fredag sør og
+                        sørvest kuling på kysten og i fjellet. Kan hende storm
+                        nær Stad og i nordvestlige fjellstrøk. I vest regn og
+                        regnbyger. Snø over 800-1200 m. Østafjells og i
+                        Trøndelag litt regn og sludd av og til. Lørdag
+                        sørvestlig bris, kuling på kysten i nord og i fjellet
+                        første del av dagen. Regnbyger i vest og nord, snø i
+                        fjellet. Østafjells etter hvert opphold og litt sol.
+                        Mildt.
+                    </body>
+                </time>
+                <time from="2011-02-27" to="2011-03-02">
+                    <title>søndag til onsdag</title>
+                    <body>&lt;strong&gt;Norge og Spitsbergen:&lt;/strong&gt; På
+                        Spitsbergen ventes vind av skiftende retning, periodevis
+                        kuling. Litt snø av og til. Temperatur over det normale
+                        for årstiden. I resten av landet ventes vind for det
+                        meste mellom sør og nordvest. Periodevis sterk vind i
+                        nord. Nedbør av og til i vest og nord. Lite nedbør
+                        østafjells. Varierende temperaturforhold, men stort sett
+                        en mild værtype.
+                    </body>
+                </time>
+            </location>
+        </text>
+        <tabular>
+            <time from="2011-02-22T12:00:00" to="2011-02-22T18:00:00"
+                  period="2">
+                <!-- Valid from 2011-02-22T12:00:00 to 2011-02-22T18:00:00 -->
+                <symbol number="1" name="Klarvær" var="01d"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-22T12:00:00 -->
+                <windDirection deg="153.7" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="1.5" name="Flau vind"/>
+                <temperature unit="celcius" value="-6"/>
+                <pressure unit="hPa" value="1024.4"/>
+            </time>
+            <time from="2011-02-22T18:00:00" to="2011-02-23T00:00:00"
+                  period="3">
+                <!-- Valid from 2011-02-22T18:00:00 to 2011-02-23T00:00:00 -->
+                <symbol number="1" name="Klarvær" var="mf/01n.67"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-22T18:00:00 -->
+                <windDirection deg="151.2" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="2.8" name="Svak vind"/>
+                <temperature unit="celcius" value="-6"/>
+                <pressure unit="hPa" value="1024.0"/>
+            </time>
+            <time from="2011-02-23T00:00:00" to="2011-02-23T06:00:00"
+                  period="0">
+                <!-- Valid from 2011-02-23T00:00:00 to 2011-02-23T06:00:00 -->
+                <symbol number="1" name="Klarvær" var="mf/01n.68"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-23T00:00:00 -->
+                <windDirection deg="173.3" code="S" name="Sør"/>
+                <windSpeed mps="2.3" name="Svak vind"/>
+                <temperature unit="celcius" value="-8"/>
+                <pressure unit="hPa" value="1024.1"/>
+            </time>
+            <time from="2011-02-23T06:00:00" to="2011-02-23T12:00:00"
+                  period="1">
+                <!-- Valid from 2011-02-23T06:00:00 to 2011-02-23T12:00:00 -->
+                <symbol number="1" name="Klarvær" var="01d"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-23T06:00:00 -->
+                <windDirection deg="166.6" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="2.1" name="Svak vind"/>
+                <temperature unit="celcius" value="-9"/>
+                <pressure unit="hPa" value="1023.5"/>
+            </time>
+            <time from="2011-02-23T12:00:00" to="2011-02-23T18:00:00"
+                  period="2">
+                <!-- Valid from 2011-02-23T12:00:00 to 2011-02-23T18:00:00 -->
+                <symbol number="1" name="Klarvær" var="01d"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-23T12:00:00 -->
+                <windDirection deg="111.6" code="ESE" name="Øst-sørøst"/>
+                <windSpeed mps="1.0" name="Flau vind"/>
+                <temperature unit="celcius" value="-7"/>
+                <pressure unit="hPa" value="1022.0"/>
+            </time>
+            <time from="2011-02-23T18:00:00" to="2011-02-24T00:00:00"
+                  period="3">
+                <!-- Valid from 2011-02-23T18:00:00 to 2011-02-24T00:00:00 -->
+                <symbol number="3" name="Delvis skyet" var="mf/03n.70"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-23T18:00:00 -->
+                <windDirection deg="142.2" code="SE" name="Sørøst"/>
+                <windSpeed mps="2.6" name="Svak vind"/>
+                <temperature unit="celcius" value="-6"/>
+                <pressure unit="hPa" value="1019.2"/>
+            </time>
+            <time from="2011-02-24T00:00:00" to="2011-02-24T06:00:00"
+                  period="0">
+                <!-- Valid from 2011-02-24T00:00:00 to 2011-02-24T06:00:00 -->
+                <symbol number="3" name="Delvis skyet" var="mf/03n.71"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-24T00:00:00 -->
+                <windDirection deg="136.2" code="SE" name="Sørøst"/>
+                <windSpeed mps="2.6" name="Svak vind"/>
+                <temperature unit="celcius" value="-7"/>
+                <pressure unit="hPa" value="1016.3"/>
+            </time>
+            <time from="2011-02-24T06:00:00" to="2011-02-24T12:00:00"
+                  period="1">
+                <!-- Valid from 2011-02-24T06:00:00 to 2011-02-24T12:00:00 -->
+                <symbol number="4" name="Skyet" var="04"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-24T06:00:00 -->
+                <windDirection deg="128.8" code="SE" name="Sørøst"/>
+                <windSpeed mps="1.9" name="Svak vind"/>
+                <temperature unit="celcius" value="-7"/>
+                <pressure unit="hPa" value="1015.0"/>
+            </time>
+            <time from="2011-02-24T12:00:00" to="2011-02-24T18:00:00"
+                  period="2">
+                <!-- Valid from 2011-02-24T12:00:00 to 2011-02-24T18:00:00 -->
+                <symbol number="3" name="Delvis skyet" var="03d"/>
+                <precipitation value="0.0" minvalue="0.0" maxvalue="0.0"/>
+                <!-- Valid at 2011-02-24T12:00:00 -->
+                <windDirection deg="113.4" code="ESE" name="Øst-sørøst"/>
+                <windSpeed mps="1.4" name="Flau vind"/>
+                <temperature unit="celcius" value="-3"/>
+                <pressure unit="hPa" value="1015.4"/>
+            </time>
+            <time from="2011-02-24T19:00:00" to="2011-02-25T01:00:00"
+                  period="3">
+                <!-- Valid from 2011-02-24T19:00:00 to 2011-02-25T01:00:00 -->
+                <symbol number="13" name="Snø" var="13"/>
+                <precipitation value="1.0"/>
+                <!-- Valid at 2011-02-24T19:00:00 -->
+                <windDirection deg="147.9" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="3.5" name="Lett bris"/>
+                <temperature unit="celcius" value="-2"/>
+                <pressure unit="hPa" value="1014.4"/>
+            </time>
+            <time from="2011-02-25T01:00:00" to="2011-02-25T07:00:00"
+                  period="0">
+                <!-- Valid from 2011-02-25T01:00:00 to 2011-02-25T07:00:00 -->
+                <symbol number="13" name="Snø" var="13"/>
+                <precipitation value="0.9"/>
+                <!-- Valid at 2011-02-25T01:00:00 -->
+                <windDirection deg="144.7" code="SE" name="Sørøst"/>
+                <windSpeed mps="3.6" name="Lett bris"/>
+                <temperature unit="celcius" value="-1"/>
+                <pressure unit="hPa" value="1014.0"/>
+            </time>
+            <time from="2011-02-25T07:00:00" to="2011-02-25T13:00:00"
+                  period="1">
+                <!-- Valid from 2011-02-25T07:00:00 to 2011-02-25T13:00:00 -->
+                <symbol number="4" name="Skyet" var="04"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-02-25T07:00:00 -->
+                <windDirection deg="135.0" code="SE" name="Sørøst"/>
+                <windSpeed mps="3.2" name="Svak vind"/>
+                <temperature unit="celcius" value="0"/>
+                <pressure unit="hPa" value="1011.1"/>
+            </time>
+            <time from="2011-02-25T13:00:00" to="2011-02-25T19:00:00"
+                  period="2">
+                <!-- Valid from 2011-02-25T13:00:00 to 2011-02-25T19:00:00 -->
+                <symbol number="4" name="Skyet" var="04"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-02-25T13:00:00 -->
+                <windDirection deg="140.4" code="SE" name="Sørøst"/>
+                <windSpeed mps="3.1" name="Svak vind"/>
+                <temperature unit="celcius" value="4"/>
+                <pressure unit="hPa" value="1010.7"/>
+            </time>
+            <time from="2011-02-25T19:00:00" to="2011-02-26T01:00:00"
+                  period="3">
+                <!-- Valid from 2011-02-25T19:00:00 to 2011-02-26T01:00:00 -->
+                <symbol number="9" name="Regn" var="09"/>
+                <precipitation value="0.9"/>
+                <!-- Valid at 2011-02-25T19:00:00 -->
+                <windDirection deg="157.7" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="3.2" name="Svak vind"/>
+                <temperature unit="celcius" value="2"/>
+                <pressure unit="hPa" value="1006.5"/>
+            </time>
+            <time from="2011-02-26T01:00:00" to="2011-02-26T07:00:00"
+                  period="0">
+                <!-- Valid from 2011-02-26T01:00:00 to 2011-02-26T07:00:00 -->
+                <symbol number="9" name="Regn" var="09"/>
+                <precipitation value="0.9"/>
+                <!-- Valid at 2011-02-26T01:00:00 -->
+                <windDirection deg="154.2" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="3.2" name="Svak vind"/>
+                <temperature unit="celcius" value="2"/>
+                <pressure unit="hPa" value="1004.9"/>
+            </time>
+            <time from="2011-02-26T07:00:00" to="2011-02-26T13:00:00"
+                  period="1">
+                <!-- Valid from 2011-02-26T07:00:00 to 2011-02-26T13:00:00 -->
+                <symbol number="4" name="Skyet" var="04"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-02-26T07:00:00 -->
+                <windDirection deg="143.8" code="SE" name="Sørøst"/>
+                <windSpeed mps="3.7" name="Lett bris"/>
+                <temperature unit="celcius" value="1"/>
+                <pressure unit="hPa" value="1005.5"/>
+            </time>
+            <time from="2011-02-26T13:00:00" to="2011-02-26T19:00:00"
+                  period="2">
+                <!-- Valid from 2011-02-26T13:00:00 to 2011-02-26T19:00:00 -->
+                <symbol number="3" name="Delvis skyet" var="03d"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-02-26T13:00:00 -->
+                <windDirection deg="155.2" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="2.8" name="Svak vind"/>
+                <temperature unit="celcius" value="5"/>
+                <pressure unit="hPa" value="1006.7"/>
+            </time>
+            <time from="2011-02-26T19:00:00" to="2011-02-27T01:00:00"
+                  period="3">
+                <!-- Valid from 2011-02-26T19:00:00 to 2011-02-27T01:00:00 -->
+                <symbol number="2" name="Lettskyet" var="mf/02n.80"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-02-26T19:00:00 -->
+                <windDirection deg="161.2" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="3.5" name="Lett bris"/>
+                <temperature unit="celcius" value="1"/>
+                <pressure unit="hPa" value="1007.1"/>
+            </time>
+            <time from="2011-02-27T13:00:00" to="2011-02-27T19:00:00"
+                  period="2">
+                <!-- Valid from 2011-02-27T13:00:00 to 2011-02-27T19:00:00 -->
+                <symbol number="3" name="Delvis skyet" var="03d"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-02-27T13:00:00 -->
+                <windDirection deg="142.4" code="SE" name="Sørøst"/>
+                <windSpeed mps="2.6" name="Svak vind"/>
+                <temperature unit="celcius" value="3"/>
+                <pressure unit="hPa" value="1006.5"/>
+            </time>
+            <time from="2011-02-28T13:00:00" to="2011-02-28T19:00:00"
+                  period="2">
+                <!-- Valid from 2011-02-28T13:00:00 to 2011-02-28T19:00:00 -->
+                <symbol number="9" name="Regn" var="09"/>
+                <precipitation value="0.9"/>
+                <!-- Valid at 2011-02-28T13:00:00 -->
+                <windDirection deg="262.7" code="W" name="Vest"/>
+                <windSpeed mps="3.7" name="Lett bris"/>
+                <temperature unit="celcius" value="5"/>
+                <pressure unit="hPa" value="1019.1"/>
+            </time>
+            <time from="2011-03-01T13:00:00" to="2011-03-01T19:00:00"
+                  period="2">
+                <!-- Valid from 2011-03-01T13:00:00 to 2011-03-01T19:00:00 -->
+                <symbol number="9" name="Regn" var="09"/>
+                <precipitation value="1.1"/>
+                <!-- Valid at 2011-03-01T13:00:00 -->
+                <windDirection deg="146.8" code="SSE" name="Sør-sørøst"/>
+                <windSpeed mps="3.3" name="Svak vind"/>
+                <temperature unit="celcius" value="5"/>
+                <pressure unit="hPa" value="1017.1"/>
+            </time>
+            <time from="2011-03-02T13:00:00" to="2011-03-02T19:00:00"
+                  period="2">
+                <!-- Valid from 2011-03-02T13:00:00 to 2011-03-02T19:00:00 -->
+                <symbol number="3" name="Delvis skyet" var="03d"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-03-02T13:00:00 -->
+                <windDirection deg="258.9" code="W" name="Vest"/>
+                <windSpeed mps="3.1" name="Svak vind"/>
+                <temperature unit="celcius" value="4"/>
+                <pressure unit="hPa" value="1018.7"/>
+            </time>
+            <time from="2011-03-03T13:00:00" to="2011-03-03T19:00:00"
+                  period="2">
+                <!-- Valid from 2011-03-03T13:00:00 to 2011-03-03T19:00:00 -->
+                <symbol number="4" name="Skyet" var="04"/>
+                <precipitation value="0.0"/>
+                <!-- Valid at 2011-03-03T13:00:00 -->
+                <windDirection deg="175.8" code="S" name="Sør"/>
+                <windSpeed mps="3.2" name="Svak vind"/>
+                <temperature unit="celcius" value="3"/>
+                <pressure unit="hPa" value="1009.2"/>
+            </time>
+        </tabular>
+    </forecast>
+</weatherdata>
