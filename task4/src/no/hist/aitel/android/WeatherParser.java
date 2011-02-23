@@ -12,8 +12,8 @@ import java.io.IOException;
 public class WeatherParser {
 
     public static void parse(XmlResourceParser parser, TableLayout tableLayout) {
-        int eventType = XmlResourceParser.START_DOCUMENT;
         try {
+            int eventType = parser.getEventType();
             while (eventType != XmlResourceParser.END_DOCUMENT) {
                 if (eventType == XmlResourceParser.START_TAG) {
                     String element = parser.getName();
@@ -22,7 +22,7 @@ public class WeatherParser {
 
                         parseLocation(parser, tableLayout);
                     } else if ("credit".equals(element)) {
-                        parseCredit(parser, tableLayout);
+                        //parseCredit(parser, tableLayout);
                     } else if ("forecast".equals(element)) {
                     }
                 }
@@ -38,17 +38,13 @@ public class WeatherParser {
     private static void parseCredit(XmlResourceParser parser,
                                     TableLayout tableLayout)
             throws XmlPullParserException, IOException {
-        int eventType = -1;
-        boolean done = false;
-        while (!done) {
-            String element = parser.getName();
-            if (eventType == XmlResourceParser.START_TAG &&
-                    "link".equals(element)) {
-                String link = parser.getAttributeValue("link", "text");
-                addRow(tableLayout, element, link);
-            } else if (eventType == XmlResourceParser.END_TAG) {
-                if ("country".equals(element)) {
-                    done = true;
+        int eventType = parser.getEventType();
+        while (eventType != XmlResourceParser.END_DOCUMENT) {
+            if (eventType == XmlResourceParser.START_TAG) {
+                String element = parser.getName();
+                if ("link".equals(element)) {
+                    String text = parser.getAttributeValue(null, "text");
+                    addRow(tableLayout, element, text);
                 }
             }
             eventType = parser.next();
@@ -58,21 +54,21 @@ public class WeatherParser {
     private static void parseLocation(XmlResourceParser parser,
                                       TableLayout tableLayout)
             throws XmlPullParserException, IOException {
-        int eventType = -1;
-        String element;
-        boolean done = false;
-        while (!done) {
-            eventType = parser.nextTag();
-            element = parser.getName();
+        int eventType = parser.getEventType();
+        while (eventType != XmlResourceParser.END_DOCUMENT) {
             if (eventType == XmlResourceParser.START_TAG) {
-                String value = parser.nextText();
-                addRow(tableLayout, element, value);
-            }
-            if (eventType == XmlResourceParser.END_TAG) {
-                if ("country".equals(element)) {
-                    done = true;
+                String element = parser.getName();
+                if (!"timezone".equals(element) && !"location".equals(element)) {
+
+                    addRow(tableLayout, element, parser.nextText());
+                }
+            } else if (eventType == XmlResourceParser.END_TAG) {
+                String element = parser.getName();
+                if ("location".equals(element)) {
+                    break;
                 }
             }
+            eventType = parser.next();
         }
     }
 
