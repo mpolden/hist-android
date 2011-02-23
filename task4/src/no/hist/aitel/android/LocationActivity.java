@@ -12,7 +12,7 @@ public class LocationActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.location);
         XmlResourceParser parser = getResources().getXml(R.xml.varsel);
-        WeatherParser.parse(parser, (TableLayout) findViewById(
-                R.id.location));
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.location);
+        WeatherParser.parse(parser, tableLayout);
     }
 }
