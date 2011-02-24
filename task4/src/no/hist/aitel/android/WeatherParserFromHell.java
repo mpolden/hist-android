@@ -12,7 +12,8 @@ import java.io.IOException;
 
 public class WeatherParserFromHell {
 
-    public static void parse(XmlResourceParser parser, TableLayout tableLayout) {
+    public static void parse(XmlResourceParser parser,
+                             TableLayout tableLayout) {
         try {
             int eventType = parser.getEventType();
             while (eventType != XmlResourceParser.END_DOCUMENT) {
@@ -64,31 +65,40 @@ public class WeatherParserFromHell {
                             if (eventType == XmlResourceParser.START_TAG) {
 
                                 if ("symbol".equals(element)) {
-                                    out.append(String.format("Type: %s", parser.
+                                    out.append(String.format("Type: %s",
+                                            parser.
                                             getAttributeValue(null,
                                                     "name")));
                                 } else if ("windDirection".equals(element)) {
-                                    out.append(
-                                            String.format(", vindretning: %s",
-                                                    parser.getAttributeValue(null,
-                                                            "name")));
+                                    out.append(String.format(
+                                            ", " + "" + "" + "" + "" + "" +
+                                                    "" +
+                                                    "" + "vindretning:" + " "
+                                                    +
+                                                    "%s",
+                                            parser.getAttributeValue(null,
+                                                    "name")));
                                 } else if ("windSpeed".equals(element)) {
-                                    out.append(
-                                            String.format(
-                                                    ", vindhastighet: %s m/s",
-                                                    parser.getAttributeValue(null,
-                                                            "mps")));
+                                    out.append(String.format(
+                                            ", " + "" + "" + "" + "" + "" +
+                                                    "" +
+                                                    "" + "vindhastighet:" +
+                                                    " %s" + " " + "m/s",
+                                            parser.getAttributeValue(null,
+                                                    "mps")));
                                 } else if ("temperature".equals(element)) {
-                                    out.append(
-                                            String.format(
-                                                    ", temperatur: %s %s",
-                                                    parser.getAttributeValue(null,
-                                                            "value"),
-                                                    parser.getAttributeValue(null,
-                                                            "unit")
-                                            ));
+                                    out.append(String.format(
+                                            ", " + "" + "" + "" + "" + "" +
+                                                    "" +
+                                                    "" + "temperatur: " +
+                                                    "%s " + "%s",
+                                            parser.getAttributeValue(null,
+                                                    "value"),
+                                            parser.getAttributeValue(null,
+                                                    "unit")));
                                 }
-                            } else if (eventType == XmlResourceParser.END_TAG) {
+                            } else if (eventType == XmlResourceParser
+                                    .END_TAG) {
                                 if ("pressure".equals(element)) {
                                     addLine(tableLayout, out.toString());
                                     out.delete(0, out.length());
@@ -124,8 +134,8 @@ public class WeatherParserFromHell {
                         addLine(tableLayout, column);
                         while (eventType != XmlResourceParser.END_DOCUMENT) {
                             element = parser.getName();
-                            if (eventType == XmlResourceParser.START_TAG
-                                    && "body".equals(element)) {
+                            if (eventType == XmlResourceParser.START_TAG &&
+                                    "body".equals(element)) {
                                 value = parser.nextText();
                                 addLine(tableLayout, value);
                                 break;
@@ -134,8 +144,9 @@ public class WeatherParserFromHell {
                         }
                     }
                 }
-            } else if (eventType == XmlResourceParser.END_TAG &&
-                    "text".equals(element)) {
+            } else if (eventType == XmlResourceParser.END_TAG && "text"
+                    .equals(
+                    element)) {
                 break;
             }
             eventType = parser.next();
@@ -149,14 +160,15 @@ public class WeatherParserFromHell {
         int eventType = parser.getEventType();
         while (eventType != XmlResourceParser.END_DOCUMENT) {
             String element = parser.getName();
-            if (eventType == XmlResourceParser.START_TAG &&
-                    "link".equals(element)) {
+            if (eventType == XmlResourceParser.START_TAG && "link".equals(
+                    element)) {
                 String text = parser.getAttributeValue(null, "text");
                 if (text != null && text.length() > 0) {
                     addLine(tableLayout, text);
                 }
-            } else if (eventType == XmlResourceParser.END_TAG &&
-                    "link".equals(element)) {
+            } else if (eventType == XmlResourceParser.END_TAG && "link"
+                    .equals(
+                    element)) {
                 break;
             }
             eventType = parser.next();
