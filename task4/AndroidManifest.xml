@@ -14,7 +14,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LocationActivity"/>
-        <activity android:name=".WeatherActivity"/>
-        <activity android:name=".DetailedWeatherActivity"/>
+        <activity android:name=".WeatherTextActivity"/>
+        <activity android:name=".WeatherDetailedActivity"/>
     </application>
-</manifest> 
+</manifest>
