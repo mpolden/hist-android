@@ -71,27 +71,17 @@ public class WeatherParserFromHell {
                                                     "name")));
                                 } else if ("windDirection".equals(element)) {
                                     out.append(String.format(
-                                            ", " + "" + "" + "" + "" + "" +
-                                                    "" +
-                                                    "" + "vindretning:" + " "
-                                                    +
-                                                    "%s",
+                                            ", vindretning: %s",
                                             parser.getAttributeValue(null,
                                                     "name")));
                                 } else if ("windSpeed".equals(element)) {
                                     out.append(String.format(
-                                            ", " + "" + "" + "" + "" + "" +
-                                                    "" +
-                                                    "" + "vindhastighet:" +
-                                                    " %s" + " " + "m/s",
+                                            ", vindhastighet: %s m/s",
                                             parser.getAttributeValue(null,
                                                     "mps")));
                                 } else if ("temperature".equals(element)) {
                                     out.append(String.format(
-                                            ", " + "" + "" + "" + "" + "" +
-                                                    "" +
-                                                    "" + "temperatur: " +
-                                                    "%s " + "%s",
+                                            ", temperatur: %s %s",
                                             parser.getAttributeValue(null,
                                                     "value"),
                                             parser.getAttributeValue(null,
