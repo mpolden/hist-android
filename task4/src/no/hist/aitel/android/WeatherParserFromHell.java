@@ -167,17 +167,21 @@ public class WeatherParserFromHell {
                                       TableLayout tableLayout)
             throws XmlPullParserException, IOException {
         int eventType = parser.getEventType();
+        StringBuilder out = new StringBuilder();
         while (eventType != XmlResourceParser.END_DOCUMENT) {
             String element = parser.getName();
             if (eventType == XmlResourceParser.START_TAG) {
 
-                if ("name".equals(element) || "type".equals(element)
-                        || "country".equals(element)) {
-
-                    addLine(tableLayout, parser.nextText());
+                if ("name".equals(element)) {
+                    out.append(parser.nextText());
+                } else if ("country".equals(element)) {
+                    out.append(", ");
+                    out.append(parser.nextText());
                 }
             } else if (eventType == XmlResourceParser.END_TAG &&
                     "location".equals(element)) {
+                addLine(tableLayout, out.toString());
+                out.delete(0, out.length());
                 break;
             }
             eventType = parser.next();
