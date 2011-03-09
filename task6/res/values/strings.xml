@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Guess ze numbah!</string>
+    <string name="name">Navn:</string>
+    <string name="card_number">Kortnummer:</string>
+    <string name="register">Registrer</string>
+    <string name="error">Navn eller nummer ugyldig</string>
+    <string name="error_number">Vennligst skriv inn et tall</string>
+    <string name="gibberish">Ugyldig data fra server</string>
+    <string name="processing">Godkjenner, vennligst vent...</string>
+    <string name="greet">Hei %s!</string>
+    <string name="send">Send</string>
+    <string name="restart">Start på nytt</string>
+</resources>
