@@ -31,7 +31,7 @@ public class ImageViewerActivity extends Activity {
 
     private static final String TAG = ImageViewerActivity.class.getSimpleName();
     private static final int PROGRESS_DIALOG = 0;
-    private static final String TMP_FILE = "rotated.png";
+    private static final String TMP_FILE = "martinpolden.png";
     private Cursor thumbnailCursor;
     private Cursor imageCursor;
     private ProgressDialog progressDialog;
