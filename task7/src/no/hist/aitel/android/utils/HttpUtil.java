@@ -26,7 +26,7 @@ public class HttpUtil {
 
         String body = null;
         try {
-            MultipartEntity entity = new MultipartEntity(HttpMultipartMode.STRICT);
+            MultipartEntity entity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
             entity.addPart("", new FileBody(new File(path)));
             httpPost.setEntity(entity);
             HttpResponse response = httpClient.execute(httpPost, localContext);
